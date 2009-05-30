@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Control_FunViewController : UIViewController {
 
+@interface Control_FunViewController : UIViewController {
+	IBOutlet UITextField *nameField;
+	IBOutlet UITextField *numberField;
 }
 
+@property (nonatomic, retain) UITextField *nameField;
+@property (nonatomic, retain) UITextField *numberField;
+- (IBAction)textFieldDoneEditing:(id)sender;
+- (IBAction)backgroundClick:(id)sender;
 @end
 
