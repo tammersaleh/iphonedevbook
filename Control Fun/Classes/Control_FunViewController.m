@@ -11,6 +11,15 @@
 @implementation Control_FunViewController
 @synthesize nameField;
 @synthesize numberField;
+@synthesize sliderLabel;
+
+- (IBAction)sliderChanged:(id)sender {
+	UISlider *slider = (UISlider *)sender;
+	int progressAsInt = (int)(slider.value + 0.5f);
+	NSString *newText = [[NSString alloc] initWithFormat:@"%d", progressAsInt];
+	sliderLabel.text = newText;
+	[newText release];
+}
 
 - (IBAction)textFieldDoneEditing:(id)sender {
 	[sender resignFirstResponder];
