@@ -11,6 +11,19 @@
 
 @implementation DatePickerViewController
 
+-(IBAction)buttonPressed {
+	NSDate *selected = [datePicker date];
+	NSString *message = [[NSString alloc] initWithFormat:@"The date and time you selected is: %@", selected];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Date and Time Selected" 
+													message:message 
+												   delegate:nil 
+										  cancelButtonTitle:@"Yes, I did." 
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+	[message release];
+}
+
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -21,12 +34,15 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	NSDate *now = [[NSDate alloc] init];
+	[datePicker setDate:now animated:YES];
+	[now release];
     [super viewDidLoad];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -50,6 +66,7 @@
 
 
 - (void)dealloc {
+	[datePicker release];
     [super dealloc];
 }
 
