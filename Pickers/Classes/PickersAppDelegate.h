@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class PickersViewController;
+
 @interface PickersAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	IBOutlet UITabBarController *rootController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITabBarController *rootController;
 
 @end
 

@@ -23,6 +23,11 @@
 		9A8A66521017CEF600517635 /* DependentComponentPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A66501017CEF600517635 /* DependentComponentPickerView.xib */; };
 		9A8A66561017CF0900517635 /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A66541017CF0900517635 /* CustomPickerViewController.m */; };
 		9A8A66571017CF0900517635 /* CustomPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A66551017CF0900517635 /* CustomPickerView.xib */; };
+		9A8A66621017D37400517635 /* clockicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A665D1017D37400517635 /* clockicon.png */; };
+		9A8A66631017D37400517635 /* dependenticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A665E1017D37400517635 /* dependenticon.png */; };
+		9A8A66641017D37400517635 /* doubleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A665F1017D37400517635 /* doubleicon.png */; };
+		9A8A66651017D37400517635 /* singleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A66601017D37400517635 /* singleicon.png */; };
+		9A8A66661017D37400517635 /* toolicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A66611017D37400517635 /* toolicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		9A8A66531017CF0900517635 /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
 		9A8A66541017CF0900517635 /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
 		9A8A66551017CF0900517635 /* CustomPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomPickerView.xib; path = Classes/CustomPickerView.xib; sourceTree = "<group>"; };
+		9A8A665D1017D37400517635 /* clockicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockicon.png; sourceTree = "<group>"; };
+		9A8A665E1017D37400517635 /* dependenticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dependenticon.png; sourceTree = "<group>"; };
+		9A8A665F1017D37400517635 /* doubleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleicon.png; sourceTree = "<group>"; };
+		9A8A66601017D37400517635 /* singleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleicon.png; sourceTree = "<group>"; };
+		9A8A66611017D37400517635 /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9A8A66681017D37A00517635 /* Tab Bar Images */,
 				9A8A66551017CF0900517635 /* CustomPickerView.xib */,
 				9A8A66501017CEF600517635 /* DependentComponentPickerView.xib */,
 				9A8A664B1017CEDD00517635 /* DoubleComponentPickerView.xib */,
@@ -137,6 +148,18 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A8A66681017D37A00517635 /* Tab Bar Images */ = {
+			isa = PBXGroup;
+			children = (
+				9A8A665D1017D37400517635 /* clockicon.png */,
+				9A8A665E1017D37400517635 /* dependenticon.png */,
+				9A8A665F1017D37400517635 /* doubleicon.png */,
+				9A8A66601017D37400517635 /* singleicon.png */,
+				9A8A66611017D37400517635 /* toolicon.png */,
+			);
+			name = "Tab Bar Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,11 @@
 				9A8A664D1017CEDE00517635 /* DoubleComponentPickerView.xib in Resources */,
 				9A8A66521017CEF600517635 /* DependentComponentPickerView.xib in Resources */,
 				9A8A66571017CF0900517635 /* CustomPickerView.xib in Resources */,
+				9A8A66621017D37400517635 /* clockicon.png in Resources */,
+				9A8A66631017D37400517635 /* dependenticon.png in Resources */,
+				9A8A66641017D37400517635 /* doubleicon.png in Resources */,
+				9A8A66651017D37400517635 /* singleicon.png in Resources */,
+				9A8A66661017D37400517635 /* toolicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
