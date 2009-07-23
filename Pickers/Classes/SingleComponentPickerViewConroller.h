@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SingleComponentPickerViewConroller : UIViewController {
-
+@interface SingleComponentPickerViewConroller : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
+	IBOutlet UIPickerView *singlePicker;
+	NSArray *pickerData
 }
+
+@property (nonatomic, retain) UIPickerView *singlePicker;
+@property (nonatomic, retain) NSArray *pickerData;
+-(IBAction)buttonPressed;s
 
 @end
